@@ -6,7 +6,7 @@ When creating an open source project on GitHub, it’s important to have a high-
 
 You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
 
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
+Your task is to create a command-line application that dynamically generates a professional README.md file from a user"s input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
 
 The application will be invoked by using the following command:
 
@@ -49,7 +49,7 @@ THEN I am taken to the corresponding section of the README
 
 Here are some guidelines to help you get started:
 
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
+* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn"t tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
 
 * Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
 
