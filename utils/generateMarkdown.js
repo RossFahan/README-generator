@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to return the license badge
 function renderLicenseBadge(license) {
   switch (license) {
     case 'MIT':
@@ -19,8 +18,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function to choose the license description link
 function renderLicenseLink(license) {
   switch (license) {
     case 'MIT':
@@ -39,15 +37,15 @@ function renderLicenseLink(license) {
       return '';
   }
 }
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
+// Function to Generate the license table 
 function renderLicenseSection(license) {
   if ((license) && (license !== 'none')) {
 
     const licenseLink = renderLicenseLink(license);
     const licenseBadge = renderLicenseBadge(license);
 
-    return `## License
+    return `
 
 | License | Link |
 | ------- | ---- |
@@ -60,10 +58,40 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate the markdown for README
 function generateMarkdown(data) {
+  const licenseSection = renderLicenseSection(data.license);
+
   return `# ${data.title}
 
+## License
+${licenseSection}
+
+## Description
+${data.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.installInstructions}
+
+## Usage
+${data.usage} 
+
+## Contributing
+${data.contributions}
+
+## Tests
+${data.testing}
+
+## Questions
+You may contact me with further questions via GitHub: [${data.userName}](https://github.com/${data.userName})
+or send me an email at: ${data.email}
 `;
 }
 
