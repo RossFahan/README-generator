@@ -1,10 +1,9 @@
-// TODO: Include packages needed for this application
+// Import required packages
 const fs = require("fs");
 const inquirer = require("inquirer");
 const markdown = require('./utils/generateMarkdown');
 
-
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
   {
     type: "input",
@@ -54,7 +53,7 @@ const questions = [
   }
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     // Generate the markdown content for README
     const markdownContent = generateMarkdown(data);
@@ -62,15 +61,14 @@ function writeToFile(fileName, data) {
     // Write the markdown content to the specified file
     fs.writeFile(fileName, markdownContent, (error) => {
       if (error) {
-        console.error('Error creating README file:', error);
+        console.error('Error creating README file: ', error);
       }
     });
   }
 
-
-// TODO: Create a function to initialize app
+// Function to initialize the application
 function init() {
-    console.log('Please answer the following questions to create your README');
+    console.log('\nPlease answer the following questions to create your README: \n');
   
     inquirer
       .prompt(questions)
@@ -78,11 +76,10 @@ function init() {
         writeToFile('README.md', answers); // Call writeToFile function with user answers
       })
       .catch((error) => {
-        console.error('Error occurred while gathering README data:', error);
+        console.error('\nError occurred while gathering README data: ', error);
       });
   }
   
-
-// Function call to initialize app
+// Start the application
 init();
 module.exports = writeToFile;
