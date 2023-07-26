@@ -20,7 +20,7 @@ The application will generate the README.md file using markdown and will also in
 
 
 ## Video Demo
-![VidDemo](./demos/README-gen-demo.mp4)
+![VidDemo](https://drive.google.com/file/d/1zDENTHeTZEBtZ9bwyZr4ElZCBLGeTfFC/)
 
 ## Command line input
 ![Input](./demos/command-line.png)
