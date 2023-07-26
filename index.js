@@ -1,14 +1,14 @@
 // Import required packages
 const fs = require("fs");
 const inquirer = require("inquirer");
-const markdown = require('./utils/generateMarkdown');
+const markDown = require('./utils/generateMarkdown');
 
 // Array of questions for user input
 const questions = [
   {
     type: "input",
     message: "Enter your project title:",
-    name: "projectTitle"
+    name: "title"
   },
   {
     type: "input",
@@ -56,7 +56,7 @@ const questions = [
 // Function to write README file
 function writeToFile(fileName, data) {
     // Generate the markdown content for README
-    const markdownContent = generateMarkdown(data);
+    const markdownContent = markDown(data);
   
     // Write the markdown content to the specified file
     fs.writeFile(fileName, markdownContent, (error) => {
