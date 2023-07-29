@@ -4,8 +4,6 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
-| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
 | Javascript | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |    
 | Node.js | [https://nodejs.org/en/docs](https://nodejs.org/en/docs)     |  
 | Inquirer.js | [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)     |  
